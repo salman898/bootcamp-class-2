@@ -21,17 +21,16 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Setup Node.js environment
-      uses: actions/setup-node@v2.1.5
+      uses: actions/setup-node@v2-beta
       with:
        version: 12 
     - name: GitHub Action for Yarn
-  
-      uses: Borales/actions-yarn@v2.3.0
+      uses: Borales/actions-yarn@v2.1.0
       with:
     # Yarn command
        cmd: install
        
-    - name: creating build
+    - name: Creating build
       run: yarn build
       
     - name: installing surge
