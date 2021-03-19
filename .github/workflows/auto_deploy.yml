@@ -35,7 +35,7 @@ jobs:
     - name: install yarn
       run: sudo apt update && sudo apt install yarn
 
-    - name: Creating build file
+    - name: Creating rect-app
       run: yarn build
       
     - name: installing surge  
